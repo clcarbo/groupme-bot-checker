@@ -51,18 +51,6 @@ def checkit():
 
 
     #-------------#
-    #-- Insults --#
-    #-------------#
-    elif re.search('^!insult', post['text'].lower()):
-        from insults import insult, insult_part
-        temp_data = post['text'].split()
-        if len(temp_data) <= 1:
-            response = 'Uh, who the fuck am I supposed to insult? You {}'\
-                .format(insult_part())
-        else:
-            response = insult(insult_part()).format(temp_data[1])
-
-    #-------------#
     #-- Fishing --#
     #-------------#
 
