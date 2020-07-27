@@ -1,9 +1,27 @@
 #+TITLE: Groupme-Checker
 #+AUTHOR: Christopher Carbonaro
 
-A silly bot that does various things for a groupme I'm in.
+* What is this project?
+  
+  Checker is a silly bot that does various things for a GroupMe I'm in. Most importantly, it serves as an interface for members of the group to play a fishing mini-game I created. By typing certain commands into GroupMe, users can tell checker to perform certain actions.
 
-* Dev Notes
+  *Note*: this repository should be considered a demo. Although Checker is fully operational, the version which is in deployment comes from a different, private repository. The bot in deployment occasionally refers to members of the group by name; consequently, for the purposes of privacy, I have uploaded a 'cleaned' version to showcase my work.
+
+** How does this project work?
+
+   Checker is, at heart, a [[https://flask.palletsprojects.com/en/1.1.x/][Flask application]]. The application is deployed on [[https://www.heroku.com][Heroku]] and interfaces with a [[https://www.postgresql.org/][PostgreSQL Database]] when acting as a moderator for the game.
+
+   To view the heart of the application, see the ~response.py~ file in the ~checker/~ directory. The application is defined therein. To explore how the fishing game works, see the ~fishing.py~ file.
+
+** Post-completion reflections
+
+   The most difficult aspect of creating the program was dealing with multiprocessing tasks and asynchronous functions. Thankfully, I am now relatively comfortable using python's ~asyncio~ functionality which should make future similar tasks less complicated in the future.
+
+   The project would benefit from some unit tests; although I have used ~pytest~ before, I underutilized it during development and it likely lead to more frustration than was necessary.
+
+   Finally, there are too many if/else statements in the main program. Initially, this was used as a quick fix but it is not a pain to maintain. It would be much easier to just parse the command and use the parsed command to call the appropriate function. However, since it works as it is now, I have had no real need to improve it.
+
+* Dev Notes (used during development to keep track of tasks)
 ** DONE Fishing Game
    CLOSED: [2020-07-18 Sat 22:14]
 *** Items
