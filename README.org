@@ -5,7 +5,7 @@
   
   Checker is a silly bot that does various things for a GroupMe I'm in. Most importantly, it serves as an interface for members of the group to play a fishing mini-game I created. By typing certain commands into GroupMe, users can tell checker to perform certain actions.
 
-  *Note*: this repository should be considered a demo. Although Checker is fully operational, the version which is in deployment comes from a different, private repository. The bot in deployment occasionally refers to members of the group by name; consequently, for the purposes of privacy, I have uploaded a 'cleaned' version to showcase my work.
+  *Note*: this repository should be considered a demo. Although Checker is fully operational, the version which is in deployment comes from a different, private repository. The bot in deployment occasionally refers to members of the group by name; consequently, for the purposes of privacy, I have uploaded a 'cleaned' version to showcase my work. This is why there are so few commits to this repository; at the time of writing, the deployed version has over 60 commits.
 
 ** How does this project work?
 
