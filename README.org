@@ -1,0 +1,27 @@
+#+TITLE: Groupme-Checker
+#+AUTHOR: Christopher Carbonaro
+
+A silly bot that does various things for a groupme I'm in.
+
+* Dev Notes
+** DONE Fishing Game
+   CLOSED: [2020-07-18 Sat 22:14]
+*** Items
+    - [X] Write item descriptions
+    - [X] Come up with how each reduces chance of failure
+      - [X] Which boats can be used where?
+*** Implementation
+    - [X] Calculate the average size of fish for each habitat
+    - [X] Include commands for:
+      - [X] Checking your stats
+      - [X] Casting a line
+      - [X] Checking the leaderboards
+    - [X] Thread the requests, find a way to schedule the tasks
+    - [X] Check for level-ups
+*** Deploy
+    - [X] Change bot keys
+    - [X] Add catches to catch table
+    - [X] Include help text
+      - [X] Tips?
+    - [X] Improve messages
+
